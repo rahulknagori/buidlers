@@ -1,0 +1,60 @@
+
+.navbar h1{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 0.2rem;
+}
+
+.navbar a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.nav__mob .brand{
+    display: none;
+}
+
+.navbar  ul{
+    list-style-type: none;
+}
+
+.fa_menu{
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+@media all and (max-width: 425px){
+    .nav__mob {
+        display: block;
+        height: 100vh;
+        overflow-y: hidden;
+        margin-top: 2rem !important;
+    }
+
+    .nav__mob .menu__icon{
+        display: none !important;
+    }
+
+    .nav__mob .close{
+        display: block !important;
+        position: absolute;
+        width: 6rem;
+        right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .nav__mob ul{
+        position: absolute;
+        margin-top: 2rem;
+        display: block !important;
+    }
+    .nav__mob ul li{
+        margin-bottom: 1rem;
+    }
+
+    .nav__mob ul a:first-child{
+        text-decoration: underline;
+        text-underline-offset: 0.4rem;
+    }
+    
+}

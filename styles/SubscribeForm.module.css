@@ -1,0 +1,18 @@
+.form {
+    max-width: 20rem;
+    padding: 2rem 1rem;
+    border: 1px solid rgb(224, 221, 221);
+}
+
+.form input{
+    border: 1px solid #BAA049;
+}
+
+.subscribe__Btn{
+    color: white;
+    padding-top: 0.31rem;
+    padding-bottom: 0.31rem;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    background:#BAA049;
+}

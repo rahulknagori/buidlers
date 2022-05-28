@@ -1,116 +1,74 @@
-.container {
-  padding: 0 2rem;
+
+
+.main__container a{
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header{
+    text-align: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.hero .underline {
+    width: 3rem;
+    height: 0.2rem;
+    margin: auto;
+    background-color: black;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.hero .main__heading{
+    font-weight: 400;
+    line-height: 4rem;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.hero .read__btn{
+    margin: auto;
+    background-color: black;
+    color: white;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.hero .are_you_buidler{
+    margin-top: 1rem;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.achievement div{
+    width: 10rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.achievement div:last-child{
     width: 100%;
-    flex-direction: column;
-  }
+}
+
+.achievement p{
+    font-size: 1.5rem;
+}
+
+.achievement p::after{
+    content: '';
+    width: 40%;
+    margin: auto;
+    display: block;
+    margin-top: 0.2rem;
+    padding: 0.03rem;
+    background-color: black;
+}
+
+
+
+@media all and (min-width:425px){
+    .header{
+        width: 22rem;
+    }
+    .hero .read__btn{
+        width: 20rem;
+    }
+}
+
+@media all and (min-width:768px){
+    .header{
+        width: 30rem;
+    }
+    .hero .read__btn{
+        width: 22rem;
+    }
 }
